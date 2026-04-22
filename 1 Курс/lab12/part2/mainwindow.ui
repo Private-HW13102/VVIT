@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>700</width><height>560</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Лаб. 12 | Задание 2 | Вариант 8</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="margin"><number>10</number></property>
+    <property name="spacing"><number>8</number></property>
+
+    <item>
+     <widget class="QGroupBox" name="groupInput">
+      <property name="title"><string>Параметры</string></property>
+      <layout class="QHBoxLayout">
+       <item>
+        <widget class="QLabel" name="labelSize">
+         <property name="text"><string>Размер матрицы m×m (от 2 до 10):</string></property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLineEdit" name="editSize">
+         <property name="placeholderText"><string>Например: 4</string></property>
+         <property name="maximumWidth"><number>80</number></property>
+        </widget>
+       </item>
+       <item>
+        <spacer>
+         <property name="orientation"><enum>Qt::Horizontal</enum></property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QGroupBox" name="groupOutput">
+      <property name="title"><string>Результаты</string></property>
+      <layout class="QHBoxLayout">
+       <item>
+        <layout class="QVBoxLayout">
+         <item>
+          <widget class="QLabel" name="labelOrig">
+           <property name="text"><string>Исходная матрица N:</string></property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listOriginal">
+           <property name="minimumHeight"><number>220</number></property>
+           <property name="alternatingRowColors"><bool>true</bool></property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QVBoxLayout">
+         <item>
+          <widget class="QLabel" name="labelNew">
+           <property name="text"><string>Новая матрица L (каждый элемент + сумма):</string></property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="listResult">
+           <property name="minimumHeight"><number>220</number></property>
+           <property name="alternatingRowColors"><bool>true</bool></property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+
+    <item>
+     <widget class="QLabel" name="statusLabel">
+      <property name="text"><string>Введите размер матрицы и нажмите «Сгенерировать и решить»</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+      <property name="wordWrap"><bool>true</bool></property>
+      <property name="minimumHeight"><number>40</number></property>
+     </widget>
+    </item>
+
+    <item>
+     <layout class="QHBoxLayout">
+      <item><spacer><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+      <item>
+       <widget class="QPushButton" name="btnSolve">
+        <property name="text"><string>Сгенерировать и решить</string></property>
+        <property name="minimumWidth"><number>160</number></property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btnExit">
+        <property name="text"><string>Выход</string></property>
+        <property name="minimumWidth"><number>100</number></property>
+       </widget>
+      </item>
+      <item><spacer><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer></item>
+     </layout>
+    </item>
+
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
