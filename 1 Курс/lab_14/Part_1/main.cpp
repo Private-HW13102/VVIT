@@ -33,19 +33,18 @@ int cleanFileFromDigits(const std::string &inPath, const std::string &outPath) {
 int main() {
   std::string inPath, outPath;
 
-  std::cout << "Lab 14, General Task 1 (Variant 8)" << std::endl;
-  std::cout << "Enter input file path:" << std::endl;
+  std::cout << "Введите путь к файлу:" << std::endl;
   std::getline(std::cin, inPath);
 
-  std::cout << "Enter output file path:" << std::endl;
+  std::cout << "Введите путь к очищенному файлу:" << std::endl;
   std::getline(std::cin, outPath);
 
   int deleted = cleanFileFromDigits(inPath, outPath);
 
   if (deleted < 0) {
-    std::cerr << "Error: Could not process files." << std::endl;
+    std::cerr << "Ошибка: файл не найден." << std::endl;
   } else {
-    std::cout << "Digits removed: " << deleted << std::endl;
+    std::cout << "Количество удаленных элементов: " << deleted << std::endl;
   }
 
   return 0;
