@@ -35,7 +35,7 @@
       <item>
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>Input File:</string>
+         <string>Исходный файл:</string>
         </property>
        </widget>
       </item>
@@ -60,7 +60,7 @@
       <item>
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Target character:</string>
+         <string>Целевой символ:</string>
         </property>
        </widget>
       </item>
@@ -97,7 +97,7 @@
       <item>
        <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>Cumulative Sum of Max Lengths:</string>
+         <string>Сумма длин:</string>
         </property>
        </widget>
       </item>
@@ -113,7 +113,7 @@
     <item>
      <widget class="QLabel" name="statusLabel">
       <property name="text">
-       <string>Please select a file to begin.</string>
+       <string>Пожалуйста, выберите файл.</string>
       </property>
      </widget>
     </item>
@@ -122,7 +122,7 @@
       <item>
        <widget class="QPushButton" name="processButton">
         <property name="text">
-         <string>Analyze File</string>
+         <string>Анализ файла</string>
         </property>
        </widget>
       </item>
