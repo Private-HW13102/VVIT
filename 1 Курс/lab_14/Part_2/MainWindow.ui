@@ -49,7 +49,7 @@
       <item>
        <widget class="QPushButton" name="selectInButton">
         <property name="text">
-         <string>Browse...</string>
+         <string>Обзор...</string>
         </property>
        </widget>
       </item>
