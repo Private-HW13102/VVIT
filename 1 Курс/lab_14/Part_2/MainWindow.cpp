@@ -16,7 +16,7 @@ MainWindow::~MainWindow() {
 }
 
 void MainWindow::on_selectInButton_clicked() {
-    QString fileName = QFileDialog::getOpenFileName(this, "Select input file", "", "Text Files (*.txt);;All Files (*)");
+    QString fileName = QFileDialog::getOpenFileName(this, "Введите путь к файлу", "", "Text Files (*.txt);;All Files (*)");
     if (!fileName.isEmpty()) {
         ui->inPathEdit->setText(fileName);
     }
@@ -27,12 +27,12 @@ void MainWindow::on_processButton_clicked() {
     QString charStr = ui->charEdit->text();
     
     if (inPath.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "Please select an input file.");
+        QMessageBox::warning(this, "Warning", "Пожалуйста, введите путь к файлу.");
         return;
     }
     
     if (charStr.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "Please enter a target character.");
+        QMessageBox::warning(this, "Warning", "Пожалуйста, введите целевой символ.");
         return;
     }
     
@@ -40,11 +40,11 @@ void MainWindow::on_processButton_clicked() {
     int result = analyzeFileSequences(inPath, target);
     
     if (result < 0) {
-        ui->statusLabel->setText("Error: File reading failed.");
+        ui->statusLabel->setText("Ошибка. Не удалось прочитать файл.");
         ui->statusLabel->setStyleSheet("color: red;");
     } else {
         ui->resultEdit->setText(QString::number(result));
-        ui->statusLabel->setText("Analysis successful.");
+        ui->statusLabel->setText("Анализ завершен.");
         ui->statusLabel->setStyleSheet("color: green;");
     }
 }
