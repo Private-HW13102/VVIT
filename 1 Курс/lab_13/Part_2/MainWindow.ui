@@ -63,7 +63,7 @@
       <item>
        <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>Max sequence length:</string>
+         <string>Максимальная длина последовательности:</string>
         </property>
        </widget>
       </item>
