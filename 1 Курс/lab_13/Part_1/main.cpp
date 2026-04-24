@@ -18,16 +18,15 @@ std::string composeNewWord(const std::string &w1, const std::string &w2,
 int main() {
   std::string w1, w2, w3;
 
-  std::cout << "Lab 13, General Task 1 (Variant 8)" << std::endl;
-  std::cout << "Enter 3 words separated by space:" << std::endl;
+  std::cout << "Введите 3 слова, разделяя их пробелом" << std::endl;
 
   if (!(std::cin >> w1 >> w2 >> w3)) {
-    std::cerr << "Error: You must enter at least 3 words." << std::endl;
+    std::cerr << "Ошибка, нужно ввести 3 слова" << std::endl;
     return 1;
   }
 
   std::string result = composeNewWord(w1, w2, w3);
-  std::cout << "Resulting word: " << result << std::endl;
+  std::cout << "Результат: " << result << std::endl;
 
   return 0;
 }
